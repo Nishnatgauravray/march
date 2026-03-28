@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Shreya 🎂</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Split Background */
+    .left, .right {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+    }
+
+    .left {
+      left: 0;
+      background: url('https://wallpaperaccess.com/full/1567666.jpg') no-repeat center/cover;
+    }
+
+    .right {
+      right: 0;
+      background: url('https://wallpaperaccess.com/full/1356003.jpg') no-repeat center/cover;
+    }
+
+    /* Dark overlay */
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      background: #ff9800;
+      color: white;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e68900;
+      transform: scale(1.1);
+    }
+
+    #message {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="left"></div>
+<div class="right"></div>
+
+<div class="overlay">
+  <h1>🎉 Happy Birthday Shreya 🎂</h1>
+
+  <p>Wishing you a day full of fun, laughter & anime binge 😄</p>
+
+  <button onclick="showMessage()">Open Message 🎁</button>
+
+  <div id="message">
+    Stay awesome as always 💪<br>
+    Keep enjoying Haikyuu & One Piece 🔥<br>
+    Have a great year ahead 😎
+  </div>
+</div>
+
+<script>
+  function showMessage() {
+    document.getElementById("message").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
